@@ -3,10 +3,9 @@
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    /* min-height: 50vh; */
     overflow: hidden;
     background-color: var(--lightGray);
-    padding: 40px 0px;
+    padding: 60px 0px;
 }
 
 .meetcompany-container-section{
