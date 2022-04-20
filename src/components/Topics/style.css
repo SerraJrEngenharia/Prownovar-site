@@ -1,0 +1,13 @@
+.topics-container{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+.topics-container-title{
+    color: white;
+    font-size: 40px;
+}
