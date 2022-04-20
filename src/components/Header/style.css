@@ -1,0 +1,60 @@
+/* Main Container */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 15vh;
+    min-height: 100px;
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 0px 0px 40px 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Logo Container */
+.header-container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+.header-container-nav{
+    display: flex;
+    align-items: center;
+}
+
+/* List */
+.header-container-nav-ul{
+    display: flex;
+}
+
+/* Item */
+.header-container-nav-ul-li{
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #000;
+}
+
+.header-container-nav-ul-li:nth-last-child(-n+1){
+    border-right: none;
+}
+
+/* Link */
+.header-container-nav-ul-li a{
+    font-size: 1.7rem;
+    font-weight: 300;
+    transition: all 0.3s linear;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header-container-nav-ul-li a:hover{
+    color: white;
+    background-color: var(--blue);
+}
+
+.header-container-nav-ul-li strong a{
+    font-weight: 500;
+}
