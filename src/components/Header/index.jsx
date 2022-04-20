@@ -16,9 +16,9 @@ export default function Header(props){
             <nav className="header-container-nav">
                 <ul className="header-container-nav-ul">
                     <li className="header-container-nav-ul-li">{ props.path == "home" ? <strong><Link to="/">Home</Link></strong> : <Link to="/">Home</Link>}</li>
-                    <li className="header-container-nav-ul-li">{ props.path == "aboutUs" ? <strong><Link to="/Sobre">Sobre nós</Link></strong> : <Link to="/Sobre">Sobre nós</Link>}</li>
-                    <li className="header-container-nav-ul-li">{ props.path == "services" ? <strong><Link to="/Servicos">Serviços</Link></strong> : <Link to="/Servicos">Serviços</Link>}</li>
-                    <li className="header-container-nav-ul-li">{ props.path == "contact" ? <strong><Link to="/Contatos">Contatos</Link></strong> : <Link to="/Contatos">Contatos</Link>}</li>
+                    <li className="header-container-nav-ul-li">{ props.path == "aboutUs" ? <strong><Link to="/sobre">Sobre nós</Link></strong> : <Link to="/sobre">Sobre nós</Link>}</li>
+                    <li className="header-container-nav-ul-li">{ props.path == "services" ? <strong><Link to="/servicos">Serviços</Link></strong> : <Link to="/servicos">Serviços</Link>}</li>
+                    <li className="header-container-nav-ul-li">{ props.path == "contact" ? <strong><Link to="/contatos">Contatos</Link></strong> : <Link to="/contatos">Contatos</Link>}</li>
                 </ul>
             </nav>
         </div>
