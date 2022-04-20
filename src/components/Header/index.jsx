@@ -9,7 +9,7 @@ import { PrownovarLogo } from '@/components/PrownovarLogo';
 
 export default function Header(props){
     return(
-        <div className="header-container">
+        <header className="header-container">
             <div className="header-container-logo">
                 <PrownovarLogo />
             </div>
@@ -21,6 +21,6 @@ export default function Header(props){
                     <li className="header-container-nav-ul-li">{ props.path == "contact" ? <strong><Link to="/contatos">Contatos</Link></strong> : <Link to="/contatos">Contatos</Link>}</li>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 }
