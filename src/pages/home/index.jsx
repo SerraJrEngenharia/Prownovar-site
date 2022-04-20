@@ -11,6 +11,7 @@ export default function Home(){
         <>
             <Header path="home"/>
             <MeetCompany title={homeInfo.meetCompany.title} content={homeInfo.meetCompany.content} />
+
         </>
     )
 }
