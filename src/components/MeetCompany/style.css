@@ -1,0 +1,45 @@
+.meetcompany-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    /* min-height: 50vh; */
+    overflow: hidden;
+    background-color: var(--lightGray);
+    padding: 40px 0px;
+}
+
+.meetcompany-container-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 65%;
+}
+
+.meetcompany-container-section-title{
+    margin-bottom: 15px;
+}
+
+.meetcompany-container-section-title-h1{
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.meetcompany-container-section-content{
+    width: 90%;
+    text-align: justify;
+}
+
+.meetcompany-container-section-content-span{
+    font-size: 1.3rem;
+}
+
+.meetcompany-container-logo{
+    width: 30%;
+}
+
+.meetcompany-container-logo-img{
+    width: 100%;
+    border-radius: 20px;
+}
