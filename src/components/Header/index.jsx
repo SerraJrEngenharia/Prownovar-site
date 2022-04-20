@@ -4,10 +4,28 @@ import "./style.css";
 
 
 import { PrownovarLogo } from '@/components/PrownovarLogo';
-
+import { useEffect } from 'react';
 
 
 export default function Header(props){
+
+    useEffect(() => {
+        window.addEventListener('scroll', isFixed);
+        return () => {
+            window.removeEventListener('scroll', isFixed);
+        };
+    });
+
+
+     const isFixed = (e) => {
+        const header = document.querySelector('.header-container');
+        const headerImg = document.querySelector(".header-container-logo");
+
+        const scrollTop = window.scrollY;
+        scrollTop >= header.clientHeight * 0.05 ? headerImg.classList.add('header-container-logo-fixed') : headerImg.classList.remove('header-container-logo-fixed') 
+        scrollTop >= header.clientHeight * 0.05 ? header.classList.add('header-container-fixed') : header.classList.remove('header-container-fixed');
+    };
+    
     return(
         <header className="header-container">
             <div className="header-container-logo">
