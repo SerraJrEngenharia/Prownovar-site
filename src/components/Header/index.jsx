@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "./style.css";
 
 
-import { PrownovarLogo } from '../PrownovarLogo';
+import { PrownovarLogo } from '@/components/PrownovarLogo';
 
 
 
