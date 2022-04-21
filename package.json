@@ -2,13 +2,16 @@
   "name": "prownovar",
   "private": true,
   "version": "0.0.0",
-  "homepage":  "Pownovar-site/",
+  "homepage": "https://serrajrengenharia.github.io/Prownovar-site/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
